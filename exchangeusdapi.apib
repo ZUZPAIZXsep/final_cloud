@@ -1,0 +1,430 @@
+FORMAT: 1A
+HOST: https://api.currencyexchange.com/
+
+# ExchangeUSDapi
+
+This API allows you to exchange currency from USD to other currencies.
+
+# Group Currency Exchange
+
+## All Currency Rate [/currency_rate]
+
+### Exchange Currency Rates [GET]
+
++ Response 200 (application/json)
+
+        [
+            {
+                "base": "USD",
+                "rates":{
+                        "GBP" : 0.832,
+                        "EUR" : 0.931,
+                        "JPY" : 134.879,
+                        "HKD" : 7.85,
+                        "SGD" : 1.34,
+                        "CAD" : 1.369,
+                        "CNY" : 6.893,
+                        "THB" : 34.511
+                }
+            }
+        ]
+        
+## Exchange Rate GBP [/exchange_rate/GBP]
+
+### GBP (Pound Sterling) [GET]
+
++ Response 200 (application/json)
+
+        {
+            "currency": "GBP",
+            "exchange_rate": 0.832
+        }
+        
+## Exchange Rate EUR [/exchange_rate/EUR]
+
+### EUR (Euro) [GET]
+
++ Response 200 (application/json)
+
+        {
+            "currency": "EUR",
+            "exchange_rate": 0.931
+        }
+        
+## Exchange Rate JPY [/exchange_rate/JPY]
+
+### JPY (Japan Yen) [GET]
+
++ Response 200 (application/json)
+
+        {
+            "currency": "JPY",
+            "exchange_rate": 134.879
+        }
+        
+## Exchange Rate HKD [/exchange_rate/HKD]
+
+### HKD (Hong Kong Dollar) [GET]
+
++ Response 200 (application/json)
+
+        {
+            "currency": "HKD",
+            "exchange_rate": 7.85
+        }
+## Exchange Rate SGD [/exchange_rate/SGD]
+
+### SGD (Singapore Dollar) [GET]
+
++ Response 200 (application/json)
+
+        {
+            "currency": "SGD",
+            "exchange_rate": 1.34
+        }
+        
+## Exchange Rate CAD [/exchange_rate/CAD]        
+
+### CAD (Canada Dollar) [GET]
+
++ Response 200 (application/json)
+
+        {
+            "currency": "CAD",
+            "exchange_rate": 1.369
+        }
+        
+## Exchange Rate CNY [/exchange_rate/CNY]
+
+### CNY (Chinese Yuan) [GET]
+
++ Response 200 (application/json)
+
+        {
+            "currency": "CNY",
+            "exchange_rate": 6.893
+        }
+        
+## Exchange Rate THB [/exchange_rate/THB]     
+
+### THB (Thailand Baht) [GET]
+
+
++ Response 200 (application/json)
+
+        {
+            "currency": "THB",
+            "exchange_rate": 34.511
+        }
+
+## Calculate Converted Amount [/USD/to/GBP]
+
+### Calculate Converted Amount GBP [POST]
+
++ Request (application/json)
+
+        {
+            "base": "USD",
+            "target_currency": "GBP",
+            "amount": 500
+        }
+
++ Response 201 (application/json)
+
+        {
+            "success": true,
+            "base": "USD",
+            "target_currency": "GBP",
+            "amount": 500,
+            "exchange_rate": 0.832,
+            "converted_amount": 416
+        }
+        
+## Calculate Converted Amount [/USD/to/EUR]
+
+### Calculate Converted Amount EUR [POST]
+
++ Request (application/json)
+
+        {
+            "base": "USD",
+            "target_currency": "EUR",
+            "amount": 500
+        }
+
++ Response 201 (application/json)
+
+        {
+            "success": true,
+            "base": "USD",
+            "target_currency": "EUR",
+            "amount": 500,
+            "exchange_rate": 0.931,
+            "converted_amount": 465.5
+        }
+        
+## Calculate Converted Amount [/USD/to/JPY]
+
+### Calculate Converted Amount JPY [POST]
+
++ Request (application/json)
+
+        {
+            "base": "USD",
+            "target_currency": "JPY",
+            "amount": 500
+        }
+
++ Response 201 (application/json)
+
+        {
+            "success": true,
+            "base": "USD",
+            "target_currency": "JPY",
+            "amount": 500,
+            "exchange_rate": 134.879,
+            "converted_amount": 67,439.5
+        }
+        
+## Calculate Converted Amount [/USD/to/HKD]
+
+### Calculate Converted Amount HKD [POST]
+
++ Request (application/json)
+
+        {
+            "base": "USD",
+            "target_currency": "HKD",
+            "amount": 500
+        }
+
++ Response 201 (application/json)
+
+        {
+            "success": true,
+            "base": "USD",
+            "target_currency": "HKD",
+            "amount": 500,
+            "exchange_rate": 7.85,
+            "converted_amount": 3,925
+        }
+        
+## Calculate Converted Amount [/USD/to/SGD]
+
+### Calculate Converted Amount SGD [POST]
+
++ Request (application/json)
+
+        {
+            "base": "USD",
+            "target_currency": "SGD",
+            "amount": 500
+        }
+
++ Response 200 (application/json)
+
+        {
+            "success": true,
+            "base": "USD",
+            "target_currency": "SGD",
+            "amount": 500,
+            "exchange_rate": 1.34,
+            "converted_amount": 670
+        }
+
+## Calculate Converted Amount [/USD/to/CAD]
+
+### Calculate Converted Amount CAD [POST]
+
+
++ Request (application/json)
+
+        {
+            "base": "USD",
+            "target_currency": "CAD",
+            "amount": 500
+        }
+
++ Response 200 (application/json)
+
+        {
+            "success": true,
+            "base": "USD",
+            "target_currency": "CAD",
+            "amount": 500,
+            "exchange_rate": 1.369,
+            "converted_amount": 684.5
+        }
+
+## Calculate Converted Amount [/USD/to/CNY]
+
+### Calculate Converted Amount CNY [POST]
+
++ Request (application/json)
+
+        {
+            "base": "USD",
+            "target_currency": "CNY",
+            "amount": 500
+        }
+
++ Response 200 (application/json)
+
+        {
+            "success": true,
+            "base": "USD",
+            "target_currency": "CNY",
+            "amount": 500,
+            "exchange_rate": 6.389,
+            "converted_amount": 3194.5
+        }
+
+## Calculate Converted Amount [/USD/to/THB]
+
+### Calculate Converted Amount THB [POST]
+
++ Request (application/json)
+
+        {
+            "base": "USD",
+            "target_currency": "THB",
+            "amount": 500
+        }
+
++ Response 200 (application/json)
+
+        {
+            "success": true,
+            "base": "USD",
+            "target_currency": "THB",
+            "amount": 500,
+            "exchange_rate": 34.511,
+            "converted_amount": 17255.5
+        }
+
+        
+# Add New Currency [/currencies]
+
+## Add Currency Exchange Rate [POST]
+
++ Request (application/json)
+
+        {
+            "currency": "AUD",
+            "exchange_rate": 1.410
+        }
+
++ Response 201 (application/json)
+
+        {
+            "currency": "AUD",
+            "exchange_rate": 1.410
+        }
+
++ Response 400 (application/json)
+
+    + Headers
+
+            Content-Type1: application/json
+
+    + Body
+
+            {
+                "error": "Invalid parameters. Please specify 'currency' and 'exchange_rate' parameters."
+            }
+
++ Response 409 (application/json)
+
+    + Headers
+
+            Content-Type2: application/json
+
+    + Body
+
+            {
+                "error": "The currency you requested already exists."
+            }
+
++ Response 500 (application/json)
+
+    + Headers
+
+            Content-Type3: application/json
+
+    + Body
+
+            {
+                "error": "An error occurred while processing your request."
+            }
+    
+        
+## Update-Delete Currency Rate [/currencies/{currency}]
+
+### Update Currency Exchange Rate [PUT]
+
++ Parameters
+
+    + currency (string, required) - รหัสสกุลเงินที่ต้องการอัปเดต เช่น GBP, EUR, JPY เป็นต้น
+
++ Request (application/json)
+
+        {
+            "currency": "GBP",
+            "exchange_rate": 0.9
+        }
+
++ Response 200 (application/json)
+
+        {
+            "currency": "GBP",
+            "exchange_rate": 0.9
+        }
+
++ Response 400 (application/json)
+
+    + Headers
+
+            Content-Type1: application/json
+
+    + Body
+
+            {
+                "error": "Invalid parameters. Please specify 'currency' and 'exchange_rate' parameters."
+            }
+
++ Response 404 (application/json)
+
+    + Headers
+
+            Content-Type2: application/json
+
+    + Body
+
+            {
+                "error": "The currency you requested does not exist or is not supported."
+            }
+
++ Response 500 (application/json)
+
+    + Headers
+
+            Content-Type3: application/json
+
+    + Body
+
+            {
+                "error": "An error occurred while processing your request."
+            }
+
+### Delete Currency [DELETE]
+
++ Parameters
+
+    + currency (string, required) - รหัสสกุลเงินที่ต้องการลบ เช่น GBP, EUR, JPY เป็นต้น
+
++ Response 204
+
+
+
+
+
