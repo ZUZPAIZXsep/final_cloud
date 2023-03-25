@@ -1,0 +1,11 @@
+d:\Work kmutnb\JumpBox\final project exchange\api-currency-exchange\target\debug\deps\digest-055fb36a3766091b.rmeta: C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.10.6\src\lib.rs C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.10.6\src\core_api.rs C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.10.6\src\core_api\ct_variable.rs C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.10.6\src\core_api\rt_variable.rs C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.10.6\src\core_api\wrapper.rs C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.10.6\src\core_api\xof_reader.rs C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.10.6\src\digest.rs
+
+d:\Work kmutnb\JumpBox\final project exchange\api-currency-exchange\target\debug\deps\digest-055fb36a3766091b.d: C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.10.6\src\lib.rs C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.10.6\src\core_api.rs C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.10.6\src\core_api\ct_variable.rs C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.10.6\src\core_api\rt_variable.rs C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.10.6\src\core_api\wrapper.rs C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.10.6\src\core_api\xof_reader.rs C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.10.6\src\digest.rs
+
+C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.10.6\src\lib.rs:
+C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.10.6\src\core_api.rs:
+C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.10.6\src\core_api\ct_variable.rs:
+C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.10.6\src\core_api\rt_variable.rs:
+C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.10.6\src\core_api\wrapper.rs:
+C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.10.6\src\core_api\xof_reader.rs:
+C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.10.6\src\digest.rs:

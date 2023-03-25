@@ -124,8 +124,8 @@ This API allows you to exchange currency from USD to other currencies.
 + Request (application/json)
 
         {
-            "base": "USD",
-            "target_currency": "GBP",
+            "from_currency": "USD",
+            "to_currency": "GBP",
             "amount": 500
         }
 
@@ -147,8 +147,8 @@ This API allows you to exchange currency from USD to other currencies.
 + Request (application/json)
 
         {
-            "base": "USD",
-            "target_currency": "EUR",
+            "from_currency": "USD",
+            "to_currency": "EUR",
             "amount": 500
         }
 
@@ -170,8 +170,8 @@ This API allows you to exchange currency from USD to other currencies.
 + Request (application/json)
 
         {
-            "base": "USD",
-            "target_currency": "JPY",
+            "from_currency": "USD",
+            "to_currency": "JPY",
             "amount": 500
         }
 
@@ -183,7 +183,7 @@ This API allows you to exchange currency from USD to other currencies.
             "target_currency": "JPY",
             "amount": 500,
             "exchange_rate": 134.879,
-            "converted_amount": 67,439.5
+            "converted_amount": 67439.5
         }
         
 ## Calculate Converted Amount [/USD/to/HKD]
@@ -193,8 +193,8 @@ This API allows you to exchange currency from USD to other currencies.
 + Request (application/json)
 
         {
-            "base": "USD",
-            "target_currency": "HKD",
+            "from_currency": "USD",
+            "to_currency": "HKD",
             "amount": 500
         }
 
@@ -206,7 +206,7 @@ This API allows you to exchange currency from USD to other currencies.
             "target_currency": "HKD",
             "amount": 500,
             "exchange_rate": 7.85,
-            "converted_amount": 3,925
+            "converted_amount": 3925
         }
         
 ## Calculate Converted Amount [/USD/to/SGD]
@@ -216,12 +216,12 @@ This API allows you to exchange currency from USD to other currencies.
 + Request (application/json)
 
         {
-            "base": "USD",
-            "target_currency": "SGD",
+            "from_currency": "USD",
+            "to_currency": "SGD",
             "amount": 500
         }
 
-+ Response 200 (application/json)
++ Response 201 (application/json)
 
         {
             "success": true,
@@ -240,12 +240,12 @@ This API allows you to exchange currency from USD to other currencies.
 + Request (application/json)
 
         {
-            "base": "USD",
-            "target_currency": "CAD",
+            "from_currency": "USD",
+            "to_currency": "CAD",
             "amount": 500
         }
 
-+ Response 200 (application/json)
++ Response 201 (application/json)
 
         {
             "success": true,
@@ -263,12 +263,12 @@ This API allows you to exchange currency from USD to other currencies.
 + Request (application/json)
 
         {
-            "base": "USD",
-            "target_currency": "CNY",
+            "from_currency": "USD",
+            "to_currency": "CNY",
             "amount": 500
         }
 
-+ Response 200 (application/json)
++ Response 201 (application/json)
 
         {
             "success": true,
@@ -286,12 +286,12 @@ This API allows you to exchange currency from USD to other currencies.
 + Request (application/json)
 
         {
-            "base": "USD",
-            "target_currency": "THB",
+            "from_currency": "USD",
+            "to_currency": "THB",
             "amount": 500
         }
 
-+ Response 200 (application/json)
++ Response 201 (application/json)
 
         {
             "success": true,
@@ -321,44 +321,8 @@ This API allows you to exchange currency from USD to other currencies.
             "exchange_rate": 1.410
         }
 
-+ Response 400 (application/json)
-
-    + Headers
-
-            Content-Type1: application/json
-
-    + Body
-
-            {
-                "error": "Invalid parameters. Please specify 'currency' and 'exchange_rate' parameters."
-            }
-
-+ Response 409 (application/json)
-
-    + Headers
-
-            Content-Type2: application/json
-
-    + Body
-
-            {
-                "error": "The currency you requested already exists."
-            }
-
-+ Response 500 (application/json)
-
-    + Headers
-
-            Content-Type3: application/json
-
-    + Body
-
-            {
-                "error": "An error occurred while processing your request."
-            }
-    
         
-## Update-Delete Currency Rate [/currencies/{currency}]
+## Update-Delete Currency [/currencies/{currency}]
 
 ### Update Currency Exchange Rate [PUT]
 
@@ -369,52 +333,16 @@ This API allows you to exchange currency from USD to other currencies.
 + Request (application/json)
 
         {
-            "currency": "GBP",
             "exchange_rate": 0.9
         }
 
-+ Response 200 (application/json)
++ Response 201 (application/json)
 
         {
             "currency": "GBP",
             "exchange_rate": 0.9
         }
 
-+ Response 400 (application/json)
-
-    + Headers
-
-            Content-Type1: application/json
-
-    + Body
-
-            {
-                "error": "Invalid parameters. Please specify 'currency' and 'exchange_rate' parameters."
-            }
-
-+ Response 404 (application/json)
-
-    + Headers
-
-            Content-Type2: application/json
-
-    + Body
-
-            {
-                "error": "The currency you requested does not exist or is not supported."
-            }
-
-+ Response 500 (application/json)
-
-    + Headers
-
-            Content-Type3: application/json
-
-    + Body
-
-            {
-                "error": "An error occurred while processing your request."
-            }
 
 ### Delete Currency [DELETE]
 

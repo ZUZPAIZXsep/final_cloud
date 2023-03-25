@@ -1,0 +1,11 @@
+d:\Work kmutnb\JumpBox\final project exchange\api-currency-exchange\target\debug\deps\cookie-5c87129c4e85faa1.rmeta: C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\cookie-0.16.2\src\lib.rs C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\cookie-0.16.2\src\builder.rs C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\cookie-0.16.2\src\parse.rs C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\cookie-0.16.2\src\jar.rs C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\cookie-0.16.2\src\delta.rs C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\cookie-0.16.2\src\draft.rs C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\cookie-0.16.2\src\expiration.rs
+
+d:\Work kmutnb\JumpBox\final project exchange\api-currency-exchange\target\debug\deps\cookie-5c87129c4e85faa1.d: C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\cookie-0.16.2\src\lib.rs C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\cookie-0.16.2\src\builder.rs C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\cookie-0.16.2\src\parse.rs C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\cookie-0.16.2\src\jar.rs C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\cookie-0.16.2\src\delta.rs C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\cookie-0.16.2\src\draft.rs C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\cookie-0.16.2\src\expiration.rs
+
+C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\cookie-0.16.2\src\lib.rs:
+C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\cookie-0.16.2\src\builder.rs:
+C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\cookie-0.16.2\src\parse.rs:
+C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\cookie-0.16.2\src\jar.rs:
+C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\cookie-0.16.2\src\delta.rs:
+C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\cookie-0.16.2\src\draft.rs:
+C:\Users\ZUZPAIZX\.cargo\registry\src\github.com-1ecc6299db9ec823\cookie-0.16.2\src\expiration.rs:
