@@ -21,6 +21,16 @@ const BASE_URL: &str = "https://private-810151-exchangeusdapi.apiary-mock.com";
 }
 
 #[derive(Debug, Serialize, Deserialize)]
+struct ConversionResponse {
+    base_currency: String,
+    target_currency: String,
+    amount: f64,
+    exchange_rate: f64,
+    converted_amount: f64,
+}
+
+
+#[derive(Debug, Serialize, Deserialize)]
     struct ConversionRequest {
     from_currency: String,
     to_currency: String,
@@ -77,12 +87,13 @@ async fn convert_currency(info: web::Json<ConversionRequest>) -> impl Responder 
     let amount = info.amount;
 
     match converted_amount(from_currency, to_currency, amount).await {
-        Ok(_) => HttpResponse::Ok().finish(),
+        Ok(result) => HttpResponse::Created().json(result),
         Err(_) => HttpResponse::InternalServerError().finish(),
     }
 }
 
-async fn converted_amount(from_currency: &str, to_currency: &str, amount: f64) -> Result<(), Error> {
+
+async fn converted_amount(from_currency: &str, to_currency: &str, amount: f64) -> Result<ConversionResponse, Error> {
     let url = format!("{}/USD/to/{}", BASE_URL, to_currency);
     let params = [
         ("from_currency", from_currency),
@@ -95,18 +106,21 @@ async fn converted_amount(from_currency: &str, to_currency: &str, amount: f64) -
     let rate = result["exchange_rate"].as_f64().unwrap();
     let converted_amount = rate * amount;
 
-    println!("Base Currency: {}", from_currency);
-    println!("Target Currency: {}", to_currency);
-    println!("Amount: {}", amount);
-    println!("Exchange Rate: {}", rate);
-    println!("Converted Amount: {:.2}", converted_amount);
-    println!();
+    let response = ConversionResponse {
+        base_currency: from_currency.to_owned(),
+        target_currency: to_currency.to_owned(),
+        amount: amount,
+        exchange_rate: rate,
+        converted_amount: converted_amount,
+    };
 
-    Ok(())
+    Ok(response)
 }
 
 
-#[post("/currencies")]
+
+
+#[post("/excurrency")]
 async fn add_currency_exchange_rate(info: web::Json<CurrencyExchangeRate>) -> impl Responder {
     let currency = &info.currency;
     let rate = info.exchange_rate;
@@ -118,7 +132,7 @@ async fn add_currency_exchange_rate(info: web::Json<CurrencyExchangeRate>) -> im
 }
 
 async fn add_currency(currency: &str, rate: f64) -> Result<(), Error> {
-    let url = format!("{}/currencies", BASE_URL);
+    let url = format!("{}/excurrency", BASE_URL);
     let payload = json!({
         "currency": currency,
         "exchange_rate": rate,
@@ -138,7 +152,7 @@ async fn add_currency(currency: &str, rate: f64) -> Result<(), Error> {
     Ok(())
 }
 
-#[put("/currencies/{currency}")]
+#[put("/excurrency/{currency}")]
 async fn update_currency_exchange_rate(info: web::Path<(String,)>, new_rate: web::Json<Map<String, Value>>) -> impl Responder {
     let currency = &info.0;
     let rate = new_rate["exchange_rate"].as_f64().unwrap();
@@ -152,7 +166,7 @@ async fn update_currency_exchange_rate(info: web::Path<(String,)>, new_rate: web
 }
 
 async fn update_currency(currency: &str, rate: f64) -> Result<(), Error> {
-    let url = format!("{}/currencies/{}", BASE_URL, currency);
+    let url = format!("{}/excurrency/{}", BASE_URL, currency);
     let payload = json!({
         "exchange_rate": rate,
     });
@@ -171,22 +185,24 @@ async fn update_currency(currency: &str, rate: f64) -> Result<(), Error> {
     Ok(())
 }
 
-#[delete("/currencies/{currency}")]
+#[delete("/excurrency/{currency}")]
 async fn delete_currency(info: web::Path<(String,)>) -> impl Responder {
     let currency = &info.0;
     match delete_currency_data(currency).await {
-        Ok(_) => HttpResponse::NoContent().finish(),
+        Ok(_) => HttpResponse::Ok().json(json!({
+            "message": format!("Deleted Currency: {}", currency)
+        })),
         Err(_) => HttpResponse::InternalServerError().finish(),
     }
 }
 
+
 async fn delete_currency_data(currency: &str) -> Result<(), Error> {
-    let url = format!("{}/currencies/{}", BASE_URL, currency);
+    let url = format!("{}/excurrency/{}", BASE_URL, currency);
     let response = reqwest::Client::new().delete(&url).send().await?;
 
     if response.status().is_success() {
-        println!("Deleted Currency");
-        println!("Currency: {}", currency);
+        println!("Deleted Currency: {}", currency);
         println!();
     } else {
         let result: Value = response.json().await?;
@@ -195,6 +211,7 @@ async fn delete_currency_data(currency: &str) -> Result<(), Error> {
 
     Ok(())
 }
+
 
     #[actix_web::main]
     async fn main() -> std::io::Result<()> {
