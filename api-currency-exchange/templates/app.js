@@ -1,6 +1,6 @@
 // ดึงข้อมูลจาก API และแสดงผลบนหน้าเว็บ
 function getExchangeRates() {
-     $.get("localhost:8080/currency_rate", function(data) {
+     $.get("https://private-810151-exchangeusdapi.apiary-mock.com/currency_rate", function(data) {
        var rates = data[0].rates;
        var currencies = Object.keys(rates);
        
