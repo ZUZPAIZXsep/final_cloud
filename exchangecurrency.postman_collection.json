@@ -1,0 +1,709 @@
+{
+	"info": {
+		"_postman_id": "7ccc42f0-da88-4b0f-84fa-1539f011d14a",
+		"name": "exchangecurrency",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "All_Currency_rate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/currency_rate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"currency_rate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show_ExchangeRate_GBP",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/exchange_rate/CNY",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exchange_rate",
+						"CNY"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show_ExchangeRate_EUR",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/exchange_rate/CNY",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exchange_rate",
+						"CNY"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show_ExchangeRate_JPY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/exchange_rate/CNY",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exchange_rate",
+						"CNY"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show_ExchangeRate_CNY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/exchange_rate/CNY",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exchange_rate",
+						"CNY"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show_ExchangeRate_HKD",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/exchange_rate/CNY",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exchange_rate",
+						"CNY"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show_ExchangeRate_SGD",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/exchange_rate/CNY",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exchange_rate",
+						"CNY"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show_ExchangeRate_CAD",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/exchange_rate/CNY",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exchange_rate",
+						"CNY"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show_ExchangeRate_THB",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/exchange_rate/CNY",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exchange_rate",
+						"CNY"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Convert_Currency_GBP",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"from_currency\": \"USD\",\r\n    \"to_currency\": \"THB\",\r\n    \"amount\": 500\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/convert_currency",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"convert_currency"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Convert_Currency_EUR",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"from_currency\": \"USD\",\r\n    \"to_currency\": \"THB\",\r\n    \"amount\": 500\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/convert_currency",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"convert_currency"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Convert_Currency_JPY",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"from_currency\": \"USD\",\r\n    \"to_currency\": \"THB\",\r\n    \"amount\": 500\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/convert_currency",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"convert_currency"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Convert_Currency_CNY",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"from_currency\": \"USD\",\r\n    \"to_currency\": \"THB\",\r\n    \"amount\": 500\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/convert_currency",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"convert_currency"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Convert_Currency_HKD",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"from_currency\": \"USD\",\r\n    \"to_currency\": \"THB\",\r\n    \"amount\": 500\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/convert_currency",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"convert_currency"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Convert_Currency_SGD",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"from_currency\": \"USD\",\r\n    \"to_currency\": \"THB\",\r\n    \"amount\": 500\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/convert_currency",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"convert_currency"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Convert_Currency_CAD",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"from_currency\": \"USD\",\r\n    \"to_currency\": \"THB\",\r\n    \"amount\": 500\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/convert_currency",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"convert_currency"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Convert_Currency_THB",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"from_currency\": \"USD\",\r\n    \"to_currency\": \"THB\",\r\n    \"amount\": 500\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/convert_currency",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"convert_currency"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_New_Currency",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"currency\": \"AUD\",\r\n    \"exchange_rate\": 1.410\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/excurrency",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"excurrency"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_CurrencyRate_THB",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"exchange_rate\": 36\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/excurrency/THB",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"excurrency",
+						"THB"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_CurrencyRate_GBP",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"exchange_rate\": 36\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/excurrency/THB",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"excurrency",
+						"THB"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_CurrencyRate_EUR",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"exchange_rate\": 36\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/excurrency/THB",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"excurrency",
+						"THB"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_CurrencyRate_JPY",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"exchange_rate\": 36\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/excurrency/THB",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"excurrency",
+						"THB"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_CurrencyRate_CNY",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"exchange_rate\": 36\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/excurrency/THB",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"excurrency",
+						"THB"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_CurrencyRate_HKD",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"exchange_rate\": 36\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/excurrency/THB",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"excurrency",
+						"THB"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_CurrencyRate_SGD",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"exchange_rate\": 36\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/excurrency/THB",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"excurrency",
+						"THB"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_CurrencyRate_CAD",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"exchange_rate\": 36\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/excurrency/THB",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"excurrency",
+						"THB"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Currency",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/excurrency/THB",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"excurrency",
+						"THB"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
